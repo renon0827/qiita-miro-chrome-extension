@@ -1,0 +1,19 @@
+{
+  "name": "qiita-miro",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Force to look Qiita article of trend",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./js/force.ts.bundle.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["storage"],
+  "web_accessible_resources": ["src/js/*"]
+}
